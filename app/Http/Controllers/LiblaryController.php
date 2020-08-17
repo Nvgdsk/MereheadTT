@@ -10,7 +10,7 @@ class LiblaryController extends Controller
 {
     public function getAuhtors()
     {
-        return Authors::all('firstName', 'lastName');
+        return Authors::all('id','firstName', 'lastName');
     }
 
     public function getBooks()
