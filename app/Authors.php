@@ -13,7 +13,7 @@ class Authors extends Model
 
 
     public function books(){
-        return $this->hasMany(Books::class,'id');
+        return $this->hasMany(Books::class,'author_id');
     }
 
     public static function add($fields)
