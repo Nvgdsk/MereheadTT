@@ -1,5 +1,7 @@
 <h2> Основные роуты приложения( файл api.php) </h2>
 <p>
+    
+```
 Route::group([
     'prefix' => 'auth'
 ], function () {
@@ -25,4 +27,6 @@ Route::group([
     Route::post('/editBook', 'LiblaryController@edit');
     Route::post('/removeBook/{id}', 'LiblaryController@remove');
 });
+
+```
 </p>
